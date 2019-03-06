@@ -1,0 +1,11 @@
+G:\workspace\listplanetsdictonarty\bin\Debug\netcoreapp2.2\listplanetsdictonarty.deps.json
+G:\workspace\listplanetsdictonarty\bin\Debug\netcoreapp2.2\listplanetsdictonarty.runtimeconfig.json
+G:\workspace\listplanetsdictonarty\bin\Debug\netcoreapp2.2\listplanetsdictonarty.runtimeconfig.dev.json
+G:\workspace\listplanetsdictonarty\bin\Debug\netcoreapp2.2\listplanetsdictonarty.dll
+G:\workspace\listplanetsdictonarty\bin\Debug\netcoreapp2.2\listplanetsdictonarty.pdb
+G:\workspace\listplanetsdictonarty\obj\Debug\netcoreapp2.2\listplanetsdictonarty.csprojAssemblyReference.cache
+G:\workspace\listplanetsdictonarty\obj\Debug\netcoreapp2.2\listplanetsdictonarty.csproj.CoreCompileInputs.cache
+G:\workspace\listplanetsdictonarty\obj\Debug\netcoreapp2.2\listplanetsdictonarty.AssemblyInfoInputs.cache
+G:\workspace\listplanetsdictonarty\obj\Debug\netcoreapp2.2\listplanetsdictonarty.AssemblyInfo.cs
+G:\workspace\listplanetsdictonarty\obj\Debug\netcoreapp2.2\listplanetsdictonarty.dll
+G:\workspace\listplanetsdictonarty\obj\Debug\netcoreapp2.2\listplanetsdictonarty.pdb
