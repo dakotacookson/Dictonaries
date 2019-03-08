@@ -8,32 +8,32 @@ namespace listplanetsdictonarty {
                 new List<Dictionary<string, string>> () {
                     new Dictionary<string, string> { { "Viking", "Mars" } },
                     new Dictionary<string, string> { { "Opportunity", "Mars" } },
-                     new Dictionary<string, string> { { "Curiosity", "Mars" } },
+                    new Dictionary<string, string> { { "Curiosity", "Mars" } },
                     new Dictionary<string, string> { { "Mariner", "Venus" } },
-                   new Dictionary<string, string> { { "Venera", "Venus" } },
+                    new Dictionary<string, string> { { "Venera", "Venus" } },
                 };
-                    foreach (string planets in planetList) // iterate planets
-                    {
-                        List<string> matchingProbes = new List<string> ();
+            foreach (string planets in planetList) // iterate planets
+            {
+                List<string> matchingProbes = new List<string> ();
 
-                        foreach (Dictionary<string, string> probe in probes) // iterate probes
-                        {
-                            foreach (KeyValuePair<string, string> ITSGETINGDARK in probe) {
+                foreach (Dictionary<string, string> probe in probes) // iterate probes
+                {
+                    foreach (KeyValuePair<string, string> ITSGETINGDARK in probe) {
 
-                                string planet = ITSGETINGDARK.Value;
-                                string probeName = ITSGETINGDARK.Key;
+                        string planet = ITSGETINGDARK.Value;
+                        string probeName = ITSGETINGDARK.Key;
 
-                                if ((!matchingProbes.Contains (probeName)) && planets == planet) {
-                                    matchingProbes.Add (probeName);
-                                }
-
-                            }
+                        if ((!matchingProbes.Contains (probeName)) && planets == planet) {
+                            matchingProbes.Add (probeName);
                         }
-
-                        string probeList = String.Join (", ", matchingProbes);
-                        Console.WriteLine ($"{planets}: {probeList}");
 
                     }
                 }
+
+                string probeList = String.Join (", ", matchingProbes);
+                Console.WriteLine ($"{planets}: {probeList}");
+
+            }
         }
     }
+}
