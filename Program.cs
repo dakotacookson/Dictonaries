@@ -4,40 +4,36 @@ namespace listplanetsdictonarty {
     class Program {
         static void Main (string[] args) {
             List<string> planetList = new List<string> () { "Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Neptune", "Uranus", "Pluto" };
-            PrintList(planetList);
+            List<Dictionary<string, string>> probes =
+                new List<Dictionary<string, string>> () {
+                    new Dictionary<string, string> { { "Viking", "Mars" } },
+                    new Dictionary<string, string> { { "Opportunity", "Mars" } },
+                     new Dictionary<string, string> { { "Curiosity", "Mars" } },
+                    new Dictionary<string, string> { { "Mariner", "Venus" } },
+                   new Dictionary<string, string> { { "Venera", "Venus" } },
+                };
+                    foreach (string planets in planetList) // iterate planets
+                    {
+                        List<string> matchingProbes = new List<string> ();
 
-                        List<string> Probes1 = new List<string> () { "Opritunity" };
-            PrintList(Probes1);
-       Dictionary<string, string> Merger = new Dictionary<string, string> (){};
+                        foreach (Dictionary<string, string> probe in probes) // iterate probes
+                        {
+                            foreach (KeyValuePair<string, string> ITSGETINGDARK in probe) {
 
+                                string planet = ITSGETINGDARK.Value;
+                                string probeName = ITSGETINGDARK.Key;
 
-       foreach (var planet in planetList)
-       foreach(var Pro in Probes1)
-       {Merger.Add(planet, Pro);}
+                                if ((!matchingProbes.Contains (probeName)) && planets == planet) {
+                                    matchingProbes.Add (probeName);
+                                }
 
+                            }
+                        }
 
-        List<Dictionary<string, string>> probes = new List<Dictionary<string, string>>(){};
-        for (int i = 0; i < planetList.Count - 1; i++)
-        {
-       if( i == 3 ){
-Console.WriteLine("Opritunity went to " + planetList[i]);
-        }
-else {
-    Console.WriteLine("Opritunity did not go to " + planetList[i]);
+                        string probeList = String.Join (", ", matchingProbes);
+                        Console.WriteLine ($"{planets}: {probeList}");
 
-}
-        }
-        }
-        static void PrintDictonary (Dictionary<string, string> dict) {
-        foreach (KeyValuePair<string, string> kvp in dict) {
-            Console.WriteLine ($"key:) {kvp.Key}, Value: {kvp.Value}");
-        }}
-
-        static void PrintList(List<string> Lists) {
-        foreach (var List  in Lists) {
-            // Console.WriteLine(List);
-    }
-
+                    }
+                }
         }
     }
-}
